@@ -17,3 +17,20 @@ var Other_annual=Home_person1+Live_person1+Other_person1
 
 var saving_annual=Salary_annual-Other_annual
 print("Saving annual=\(saving_annual)")
+
+
+var sing : String = "Smoking is not allowed "
+var age : Int = 22
+var speed : Double = 54.7
+var iLoveSwift : Bool = true
+
+var age1 = 12
+let allowedToEnter = age1 >= 18
+
+
+
+let audienceRating = 85
+let criticsRating = 75
+let recommendedByFriend = true
+let goWatchMovie = (audienceRating > 90 && criticsRating > 80) || recommendedByFriend
+
