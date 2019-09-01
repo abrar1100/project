@@ -168,3 +168,67 @@ var alphabet = ["A","B","C"]
 alphabet.remove(at: 1)
 
 alphabet
+
+
+// * Day 10 (Collections) *
+
+// Dictionaries
+
+// Creating a Dictionary
+var dic: Dictionary<String, Int> = Dictionary<String, Int> () // full
+
+var dic0 = [String:Int]() // shorthand
+
+var dicnumbers : [String:Int] = ["One" : 1, "Two" : 2] //with values
+
+// Adding items to dictionary
+var dicnumbers0 = [String:Int]()
+dicnumbers0["One"] = 1
+dicnumbers0["Two"] = 2
+print(dicnumbers0)
+print(dicnumbers["One"])
+
+//Count
+print(dicnumbers.count)
+//is Empty
+print(dicnumbers.isEmpty)
+
+//Removing items from dictionary
+dicnumbers.removeValue(forKey: "One")
+dicnumbers
+
+// Sets
+
+//Creating a Set
+var SetNumbers = Set <Int>()
+
+var Setstudents: Set = ["Yazeed","Youssef"]
+
+//Count
+print(Setstudents.count)
+//is Empty
+print(Setstudents.isEmpty)
+
+//Adding values to a Set
+var numSet = Set<Int>()
+numSet.insert(1)
+numSet.insert(2)
+numSet.insert(3)
+numSet
+
+//Removing items from a Set
+Setstudents.remove("Yazeed")
+print(Setstudents)
+
+//contains
+if Setstudents.contains("Yazeed"){
+    print("Yes")
+}else {
+    print("No")
+}
+
+
+
+
+
+
