@@ -216,7 +216,7 @@ numSet.insert(2)
 numSet.insert(3)
 numSet
 
-//Removing items from a Set
+// Removing items from a Set
 Setstudents.remove("Yazeed")
 print(Setstudents)
 
@@ -228,7 +228,104 @@ if Setstudents.contains("Yazeed"){
 }
 
 
+// * Day 11 (Review) *
+
+// Iterating over an Array
+var students_Array = ["Mohammed","Khalid","Saad","Yazeed"]
+
+for student in students_Array {
+print(student)
+}
+
+for i in 0..<students_Array.count {
+    print(students_Array[i])
+}
+
+// Iterating over a Dictionary
+var students_dic : [String:Any] = ["name" : "Yazeed","age" : 23,"GPA" : 4.5]
+
+for (key,value) in students_dic {
+    print("\(key) : \(value)")
+}
+
+students_dic.forEach { (key, value) in
+    print("\(key) : \(value)")
+}
+
+for value in students_dic.values{
+    print(value)
+}
+// Iterating over a Set
+
+var movies: Set = ["Toy Story", "Titanic", "Green Book"]
+
+for movie in movies {
+    print(movie)
+}
+
+movies.forEach { (movie) in
+    print(movie)
+}
+
+//orderd set
+for movie in movies.sorted() {
+    print(movie)
+}
+
+var num_set : Set = [3,1,4,6,5,2]
+
+for num in num_set.sorted() {
+    print(num)
+}
+
+// * Day 12 (Quiz) *
+
+// Q1
+var yearsOfExperience = 10
+var Grade = " "
+if yearsOfExperience == 0 {
+    Grade = "Junior Engineer |"
+} else if yearsOfExperience == 1 {
+    Grade = "Junior Engineer ||"
+}else if yearsOfExperience >= 2 && yearsOfExperience <= 3 {
+    Grade = "Senior Engineer |"
+}else if yearsOfExperience > 3 && yearsOfExperience <= 5 {
+    Grade = "Senior Engineer ||"
+}else if yearsOfExperience > 5 && yearsOfExperience <= 10 {
+    Grade = "Principal Engineer "
+}else if yearsOfExperience > 10 {
+    Grade = "Distinguished Engineer "
+}
+
+print(Grade)
 
 
+// Q2
 
+for i in 1..<50 {
+    if i % 2 == 0 {
+        print(i)
+    }
+}
+
+// Q3
+
+var student_grade = [Double]()
+student_grade = [10.5,14.0,20.5,25.0]
+
+var sum = 0.0
+var avg = 0.0
+for i in student_grade {
+    sum = sum + i
+}
+avg = sum/Double(student_grade.count)
+print (sum)
+print(avg)
+
+// Q4
+var students_GPA : [String:Double] = ["Mohammes" : 4.25,"Khalid" : 4.80,"Noura" : 4.95]
+
+for (key,value) in students_GPA {
+    print("\(key) : \(value)")
+}
 
